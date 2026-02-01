@@ -1086,6 +1086,16 @@ Actions
 //	{IgnoreIfNotExisting = true; Action = Replace; Replace = "<../../../workshop/content/799600/3539253648/1130D1130S.rules>/Part/Stats/CrewRequired"; With = 3}
 //	{IgnoreIfNotExisting = true; Action = AddBase; AddBaseTo = "<../../../workshop/content/799600/3539253648/1130D/1130S.rules>/Part/Components"; BaseToAdd = &<automation_components_more_deck_cannons/1130S.rules>}
 
+    // -----------------------------------------------------
+	// BleedingGuns Impulse Drives MOD COMPATIBILITY
+	// -----------------------------------------------------
+
+    //LargeImpulseDrive - 需要4人 
+    {IgnoreIfNotExisting = true; Action = Remove; Remove = "<../../../workshop/content/799600/3023201707/large_impulse_drive/large_impulse_drive.rules>/Part/Components/PartCrew"}
+    {IgnoreIfNotExisting = true; Action = Replace; Replace = "<../../../workshop/content/799600/3023201707/large_impulse_drive/large_impulse_drive.rules>/Part/Stats/CrewRequired"; With = 4}
+    {IgnoreIfNotExisting = true; Action = AddBase; AddBaseTo = "<../../../workshop/content/799600/3023201707/large_impulse_drive/large_impulse_drive.rules>/Part/Components"; BaseToAdd = &<automation_components_bleedingguns_impulse_drives/large_impulse_drive.rules>}
+
+
 	// -----------------------------------------------------
 	// BALANCED SENSORS MOD COMPATIBILITY
 	// -----------------------------------------------------
